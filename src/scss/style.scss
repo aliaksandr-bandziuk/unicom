@@ -150,6 +150,8 @@ body {
 // Подключение стилей специальных элементов
 @import "components/button-production";
 @import "components/button-catalog";
+@import "components/button-providers";
+@import "components/button-clients";
 
 // Подключение стилей отдельных блоков
 @import "sections/header";

@@ -1,0 +1,23 @@
+.button-clients {
+  border: 1px solid $whiteColor;
+  border-radius: 4px;
+  padding: 9px 116px;
+  color: $whiteColor;
+  background-color: $mainColor;
+  font-size: 20px;
+  line-height: 40px;
+  transition: all ease-in-out .2s;
+  &:hover {
+    background-color: $whiteColor;
+    border: 1px solid $mainColor;
+    color: $mainColor;
+  }
+  @media (max-width: 1440px) {
+    padding: 9px 58px;
+  }
+  @media (max-width: 320px) {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 9px 30px;
+  }
+}

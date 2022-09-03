@@ -1,0 +1,23 @@
+.button-providers {
+  background-color: $whiteColor;
+  border: 1px solid $whiteColor;
+  color: $mainColor;
+  border-radius: 4px;
+  padding: 9px 98px;
+  font-size: 20px;
+  line-height: 40px;
+  transition: all ease-in-out .2s;
+  &:hover {
+    // border: 1px solid $whiteColor;
+    color: $whiteColor;
+    background-color: $mainColor;
+  }
+  @media (max-width: 1440px) {
+    padding: 9px 40px;
+  }
+  @media (max-width: 320px) {
+    padding: 9px 28px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
