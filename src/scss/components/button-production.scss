@@ -1,0 +1,19 @@
+.button-production {
+  background: $greenColor;
+  border-radius: 4px;
+  color: $whiteColor;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 10px 100px;
+  border: 1px solid $greenColor;
+  transition: all ease-in-out .2s;
+  &:hover {
+    color: $greenColor;
+    background-color: $whiteColor;
+    border: 1px solid $greenColor;
+  }
+  @media (max-width: 680px) {
+    font-size: 14px;
+    padding: 10px 56px;
+  }
+}
