@@ -1,6 +1,38 @@
-<section class="request">
+<div class="request">
   <div class="request__wrapper">
-    <div class="request__options"></div>
-    <div class="request__form"></div>
+    <div class="request__options">
+      <div class="request__buttons">
+        @@include('_button-providers.htm',{})
+        @@include('_button-clients.htm',{})
+      </div>
+      <div class="request__content">
+        <h2 class="request__title">
+          Оставьте заявку <br> на бесплатную консультацию по сотрудничеству с Юником
+        </h2>
+        <p class="request__text">
+          Продукты из настоящего молока, созданные под чутким контролем профессионалов
+        </p>
+      </div>
+    </div>
+    <div class="request__form">
+      <form action="#">
+        <label for="name">
+          <input type="text" name="name" id="name" placeholder="Имя *" required>
+        </label>
+        <label for="surname">
+          <input type="text" name="surname" id="surname" placeholder="Фамилия *" required>
+        </label>
+        <label for="tel">
+          <input type="tel" name="" id="tel" placeholder="Телефон *" required>
+        </label>
+        <label for="email">
+          <input type="email" name="email" id="email" placeholder="Email *" required>
+        </label>
+        <div class="form__send">
+          <button type="submit">Отправить</button>
+          <p>Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></p>
+        </div>
+      </form>
+    </div>
   </div>
-</section>
+</div>
