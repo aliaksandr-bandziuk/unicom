@@ -1,5 +1,4 @@
 .request {
-  margin-top: 50px; // временно
   padding: 100px 70px;
   background-color: $mainColor;
   border-radius: 50px 0px 50px 0px;
@@ -83,6 +82,10 @@
             font-size: 18px;
             line-height: 30px;
             color: rgba(16, 43, 78, 0.6);
+            @media (max-width: 500px) {
+              font-size: 12px;
+              line-height: 18px;
+            }
           }
           &:hover {
             outline: none;
@@ -131,6 +134,9 @@
             color: rgba(255, 255, 255, 0.8);
             a {
               text-decoration: underline;
+              @media (max-width: 320px) {
+                text-decoration: none;
+              }
             }
             @media (max-width: 500px) {
               width: 100%;

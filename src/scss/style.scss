@@ -53,7 +53,7 @@ $mobileSmall: em(479.98); // Телефоны S
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
 // 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
-$responsiveType: 1;
+// $responsiveType: 1;
 
 // ============================================================================================================================================================================================================================================================================================================================================================================================
 // ============================================================================================================================================================================================================================================================================================================================================================================================
@@ -98,47 +98,60 @@ body {
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt
 */
-@if ($responsiveType==1) {
-	// Отзывчивая
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
-		@if ($containerPadding>0) {
-			padding: 0 rem(math.div($containerPadding, 2));
-		}
+
+[class*="__container"] {
+	max-width: rem($maxWidthContainer);
+	box-sizing: content-box;
+	margin: 0 auto;
+	@media (max-width: 1440px) {
+		max-width: 1200px;
 	}
-} @else {
-	// По брейк-поинтам
-	[class*="__container"] {
-		margin: 0 auto;
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-		} @else {
-			@if ($containerPadding>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $pc) {
-			max-width: rem(970);
-		}
-		@media (max-width: $pcSmall) {
-			max-width: rem(1200);
-		}
-		@media (max-width: $tablet) {
-			max-width: rem(750);
-		}
-		@media (max-width: $mobile) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
+	@media (max-width: 1200px) {
+		max-width: 90%;
 	}
 }
+
+// @if ($responsiveType==1) {
+// 	// Отзывчивая
+// 	[class*="__container"] {
+// 		@if ($maxWidthContainer>0) {
+// 			max-width: rem($maxWidthContainer);
+// 			box-sizing: content-box;
+// 			margin: 0 auto;
+// 		}
+// 		@if ($containerPadding>0) {
+// 			padding: 0 rem(math.div($containerPadding, 2));
+// 		}
+// 	}
+// } @else {
+// 	// По брейк-поинтам
+// 	[class*="__container"] {
+// 		margin: 0 auto;
+// 		@if ($maxWidthContainer>0) {
+// 			max-width: rem($maxWidthContainer);
+// 			box-sizing: content-box;
+// 		} @else {
+// 			@if ($containerPadding>0) {
+// 				padding: 0 rem(math.div($containerPadding, 2));
+// 			}
+// 		}
+// 		@media (max-width: $pc) {
+// 			max-width: rem(970);
+// 		}
+// 		@media (max-width: $pcSmall) {
+// 			max-width: rem(1200);
+// 		}
+// 		@media (max-width: $tablet) {
+// 			max-width: rem(750);
+// 		}
+// 		@media (max-width: $mobile) {
+// 			max-width: none;
+// 			@if ($containerPadding>0 and $maxWidthContainer>0) {
+// 				padding: 0 rem(math.div($containerPadding, 2));
+// 			}
+// 		}
+// 	}
+// }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
 // Для подключения/отключения конкретных стилей смотри base.scss
@@ -153,6 +166,7 @@ body {
 @import "components/button-providers";
 @import "components/button-clients";
 @import "components/request";
+@import "components/goods-item";
 
 // Подключение стилей отдельных блоков
 @import "sections/header";
