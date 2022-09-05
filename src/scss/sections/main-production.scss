@@ -1,0 +1,81 @@
+.production {
+  padding-top: 200px;
+  padding-bottom: 20px;
+  &__container {
+    .production__title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 80px;
+      color: $mainColor;
+      margin-bottom: 40px;
+    }
+    .production__options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+      .production__option {
+        .production__desctiprion {
+          font-size: 24px;
+          line-height: 42px;
+          color: rgba(16, 43, 78, 0.6);
+          max-width: 639px;
+        }
+      }
+    }
+    .production__range {
+      height: 700px; // временно
+      .range__background {
+        width: 870px;
+        height: 100%;
+        background-color: #F8F8F8;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        .ellipse {
+          position: absolute;
+          &:first-child {
+            top: 33px;
+            left: 0;
+          }
+          &:nth-child(2) {
+            left: 0;
+            bottom: 139px;
+          }
+          &:nth-child(3) {
+            top: 9px;
+            right: 295px;
+          }
+          &:nth-child(4) {
+            left: 176px;
+            bottom: 0;
+          }
+          &:nth-child(5) {
+            left: 8px;
+            bottom: 68px;
+          }
+          &:nth-child(6) {
+            left: 130px;
+            bottom: 124px;
+          }
+          &:nth-child(7) {
+            left: 170px;
+            bottom: 72px;
+          }
+          &:nth-child(8) {
+            bottom: 160px;
+            right: 460px;
+          }
+          &:nth-child(9) {
+            bottom: 110px;
+            right: 380px;
+          }
+          &:last-child {
+            bottom: 72px;
+            right: 90px;
+          }
+        }
+      }
+    }
+  }
+}
