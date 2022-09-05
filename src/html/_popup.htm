@@ -1,10 +1,26 @@
-<!-- <div id="popup" aria-hidden="true" class="popup">
+<div id="popup-header" aria-hidden="true" class="popup popup-header">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+			<button data-close type="button" class="popup__close">╳</button>
+			<div class="popup__data">
+				<h2 class="popup__title">Оставить заявку</h2>
+				<form action="#" class="popup__form">
+					<label for="header-fio">
+						<input type="text" name="header-fio" id="header-fio" placeholder="ФИО" required>
+					</label>
+					<label for="header-tel">
+						<input type="tel" name="header-tel" id="header-tel" placeholder="+ 7 999 - 800 - 99 - 99" required>
+					</label>
+					<label for="header-email">
+						<input type="email" name="header-email" id="header-email" placeholder="E-mail" required>
+					</label>
+					<button type="submit" class="submit-button">Отправить</button>
+					<label class="label-checkbox">
+						<input type="checkbox">
+						Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+					</label>
+				</form>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
