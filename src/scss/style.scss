@@ -168,6 +168,7 @@ body {
 @import "components/request";
 @import "components/goods-item";
 @import "components/popup-header";
+@import "components/first-screen";
 
 // Подключение стилей отдельных блоков
 @import "sections/header";
@@ -178,6 +179,7 @@ body {
 @import "sections/main-partners";
 @import "sections/main-recipes";
 @import "sections/main-news";
+@import "sections/about-benefits";
 
 // Подключение стилей отдельных страниц
 @import "home";
