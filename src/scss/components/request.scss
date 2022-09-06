@@ -4,12 +4,14 @@
   border-radius: 50px 0px 50px 0px;
   max-width: 1500px;
   margin-inline: auto;
+  margin-bottom: 200px;
   @media (max-width: 1440px) {
     max-width: 1200px;
     padding: 80px 56px;
   }
   @media (max-width: 680px) {
     padding: 40px 25px;
+    margin-bottom: 80px;
   }
   .request__wrapper {
     display: flex;
