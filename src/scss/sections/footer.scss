@@ -4,6 +4,11 @@
   padding-bottom: 72px;
   background-color: $mainColor;
   color: $whiteColor;
+  .hover-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   .footer__container {
     .footer__logo {
       padding-bottom: 50px;

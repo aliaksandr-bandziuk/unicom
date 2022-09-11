@@ -13,7 +13,11 @@
       @media (max-width: 1064px) {
         flex-direction: column-reverse;
       }
+      .tabs-about {
+        display: flex;
+      }
       .about__options {
+        // display: flex;
         width: 50vw;
         position: relative;
         @media (max-width: 1064px) {

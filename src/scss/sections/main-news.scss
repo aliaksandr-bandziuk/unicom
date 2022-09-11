@@ -27,10 +27,23 @@
         display: flex;
         flex-direction: column;
         height: 640px;
+        overflow: hidden;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+          .slide__img {
+            transform: scale(1.05);
+          }
+          .slide__content {
+            .new__title {
+              text-decoration: underline;
+            }
+          }
+        }
         @media (max-width: 340px) {
           height: 450px;
         }
         .slide__img {
+          transition: all ease-in-out 0.2s;
           // position: relative;
           z-index: 1;
           img {
@@ -77,6 +90,7 @@
             line-height: 34px;
             color: #FFFFFF;
             margin-bottom: 20px;
+            transition: all ease-in-out 0.2s;
             @media (max-width: 340px) {
               font-size: 14px;
               line-height: 20px;
